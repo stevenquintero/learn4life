@@ -1,0 +1,74 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+A pseudo class is identified with a colon
+*/
+a:link {
+  color: blue;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: purple;
+}
+
+h1 {
+  color: crimson;
+  transition: all 1000ms;
+  background-color: pink;
+  margin:0;
+}
+
+h1:hover {
+  color:rebeccapurple;
+  font-size: 300%;
+  text-shadow: 5px 5px 5px hsla(0, 0%, 0%, .5);
+  transform: rotate(180deg);
+}
+
+#link {
+
+}
+.item {
+  background-color: red;
+}
+
+nav ul {
+  width: 200px;
+  background-color: orange;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 5px solid orange;
+}
+
+ul {
+  background-color: blue;
+}
+nav ul li {
+  border-bottom: 5px solid yellow;
+  padding: 5px;
+}
+
+nav li {
+  border: none;
+}
+
+nav li:nth-child(even){
+  background-color: yellow;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: white !important;
+  transition: all 250ms;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: green;
+}
