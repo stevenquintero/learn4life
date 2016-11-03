@@ -1,0 +1,42 @@
+body {
+  background-color: teal;
+  margin: 0;
+  font-size: 18px;
+}
+nav {
+  background-color: orange;
+  padding: 0px 15px 0px 10px;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  display:inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: red;
+  border-radius: 10px;
+  /*font-size: 300%;*/
+  color: orange;
+  text-decoration: none;
+  border: 1px solid maroon;
+  background-image: linear-gradient(to right, purple, blue, green, magenta, yellow);
+}
+nav a::before {
+  content: ':';
+}
+nav a::after {
+  content: ':';
+}
+nav a {
+  transition: all 1000ms;
+  /*background-image: linear-gradient(215deg, yellow, red);*/
+}
+nav a:hover {
+  color:green;
+  font-size: 300%;
+  text-shadow: 5px 5px 5px hsla(0, 0%, 0%, .5);
+  transform: rotate(180deg);
+}
