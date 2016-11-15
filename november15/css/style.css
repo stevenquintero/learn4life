@@ -1,0 +1,6 @@
+body {
+  font-family: verdana;
+}
+#phone, #phone + input {
+  width: 60px;
+}

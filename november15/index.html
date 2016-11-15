@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=S, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form>
+
+  <fieldset>
+    <legend>Tell Us About Yourself</legend>
+  <label for="text">Name:
+    <input id="text" type="text" placeholder="Enter Your Name">
+  </label>
+
+  <label for="email">Email:
+    <input id="email" type="email" placeholder="Enter Your email">
+  </label>
+</fieldset>
+
+<fieldset>
+  <label for="phone">Phone Number:
+    (<input id="phone" type="tel" maxlength="3" placeholder="Area Code">) -
+    <input type="tel" maxlenghth="3"> -
+    <input type="tel" maxlength="4">
+  </label>
+</fieldset>
+
+  <label for="password">Password:
+    <input id="password" type="password">
+  </label>
+
+  <label for="color">Color:
+  <input id="color" type="color" value="#ff0000">
+  </label>
+
+  <label for="area">Message:
+  <textarea id="area" rows="20" cols="100"></textarea>
+  </label>
+
+  <input type="submit" id="submit" value="Submit">
+</form>
+
+  <script>
+  var inputBox = document.getElementById("password");
+  var submitBtn = document.getElementById("submit");
+
+  submitBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    alert( "Welcome back, " + inputBox.value );
+  });
+  </script>
+
+</body>
+</html>
