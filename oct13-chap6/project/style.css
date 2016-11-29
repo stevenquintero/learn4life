@@ -1,0 +1,28 @@
+body {
+ font-family: "fantasy", sans-serif;
+}
+nav ul {
+  background-color: tomato;
+  list-style: none;
+  padding: 0;
+  width: 100px;
+  border: 1px solid black;
+}
+
+nav ul li {
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul li a {
+  color: Black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
